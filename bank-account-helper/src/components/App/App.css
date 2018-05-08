@@ -22,7 +22,7 @@
   font-size: large;
 }
 
-.help-text {
+.open-banking-auth-btn {
   text-align: center;
 }
 
@@ -30,8 +30,9 @@
   text-align: center;
 }
 
-.btn-success {
-  text-align: center;
+.primary-btn-container {
+  display: grid;
+  justify-items: center;
 }
 
 @keyframes App-logo-spin {

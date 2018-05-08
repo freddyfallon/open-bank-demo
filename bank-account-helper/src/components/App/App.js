@@ -30,9 +30,11 @@ class App extends Component {
             <p className="help-text">This will give us access to the details of your bank accounts, which means that you will spend less time filling out forms on our site, or looking up information from previous bills and bank statements.</p>
           </Row>
           <Row md={8}>
-            <Button bsStyle="success" bsSize="large" href={process.env.REACT_APP_BANK_ROBBER_URL}>
-              Authorise Open Banking
-            </Button>
+            <div className="primary-btn-container">
+              <Button bsStyle="primary" bsSize="large" href={process.env.REACT_APP_BANK_ROBBER_URL}>
+                Authorise Open Banking
+              </Button>
+            </div>
           </Row>
         </Grid>
       );
