@@ -53,16 +53,6 @@ app.post('/user-details', async (req, res) => {
   }
 });
 
-app.post('/transactions', async (req, res) => {
-  try {
-    const { token } = req.body;
-    const transactions = await DataAPIClient.getAccounts(token);
-    res.send(accounts);
-  } catch (err) {
-    console.error('🔴', err);
-  }
-});
-
 app.listen(port);
 
 console.log(`App is listening on port: ${port}`);
